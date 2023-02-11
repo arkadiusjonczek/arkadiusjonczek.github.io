@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
-      margin: 1em;
+      margin: 2em;
       padding: 0;
       font-family: Arial;
-      font-size: 16px;
+      font-size: 1em;
       text-align: center;
     }
     #wrapper {
@@ -17,7 +17,7 @@
       max-width: 500px;
     }
     .box {
-      padding: 5px;
+      padding: 0 5px;
     }
     .avatar {
       width: 200px;
@@ -35,8 +35,30 @@
       padding: 0;
       list-style: none;
     }
-    li {
+    ul li {
+      display: block;
+      margin: 10px;
+    }
+    ul li a {
       display: inline-block;
+      padding: 10px 80px;
+      border: 1px solid #000;
+      width: 100px;
+      background: #000;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    ul li a, ul li a:active, ul li a:visited {
+      color: #fff;
+    }
+    ul li a.xing:hover {
+      background: #C6F16D;
+    }
+    ul li a.linkedin:hover {
+      background: #0073b1;
+    }
+    ul li a.github:hover {
+      background: #0073b1;
     }
   </style>
 </head>
@@ -50,9 +72,9 @@
     </div>
     <div class="box footer">
       <ul>
-        <li><a href="https://www.xing.com/profile/Arkadius_Jonczek">XING</a></li>
-        <li><a href="https://de.linkedin.com/in/arkadiusjonczek">LinkedIn</a></li>
-        <li><a href="https://github.com/arkadiusjonczek">GitHub</a></li>
+        <li><a class="xing" href="https://www.xing.com/profile/Arkadius_Jonczek">XING</a></li>
+        <li><a class="linkedin" href="https://de.linkedin.com/in/arkadiusjonczek">LinkedIn</a></li>
+        <li><a class="github" href="https://github.com/arkadiusjonczek">GitHub</a></li>
       </ul>
     </div>
   </div
